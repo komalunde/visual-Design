@@ -1,0 +1,51 @@
+<head>
+  <style>
+  #left {
+    float:left;
+    width: 50%;
+  }
+  #right {
+    float:right;
+    width: 40%;
+  }
+  aside, section {
+    padding: 2px;
+    background-color: #ccc;
+  }
+  </style>
+  <style>
+  body {
+    background-color: #FFFFFF;
+  }
+  .blue {
+    background-color: #0000FF;
+  }
+  .yellow {
+    background-color: #FFFF00;
+  }
+  div {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+  }
+  </style>
+</head>
+<body>
+<!--positioning technique is to center a block element horizontally. One way to do this is to set its margin to a value of auto.-->
+<!--This method works for images, too. Images are inline elements by default,
+ but can be changed to block elements when you set the display property to block.-->
+ <header>
+    <h1>Welcome!</h1>
+  </header>
+  <section id="left">
+    <h2>Content</h2>
+    <p>Good stuff</p>
+  </section>
+  <aside id="right">
+    <h2>Sidebar</h2>
+    <p>Links</p>
+  </aside>
+  <div class="blue"></div>
+<div class="yellow"></div>
+  
+</body>

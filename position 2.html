@@ -1,0 +1,94 @@
+<style>
+  #navbar {
+    position:fixed;
+    top:40px;
+    left:0px;
+
+    width: 100%;
+    background-color: #767676;
+  }
+  nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+	
+  }
+  nav li {
+    display: inline;
+    margin-right: 20px;
+	
+  }
+  a {
+    text-decoration: none;
+	color:white;
+  }
+
+  div{ 
+    border-radius: 20px;
+    width: 30%;
+    height: 500px;
+    margin: 50px auto;
+    background: linear-gradient(35deg,#CCFFFF,#FFCCCC,rgb(204, 204, 255))	
+  }
+  
+</style>
+<style>
+  .ball { 
+    width: 70px;
+    height: 70px;
+    margin: 50px auto;
+    position: fixed;
+	left:20%;
+    background: linear-gradient(35deg,#ccffff,#ffcccc);
+    border-radius: 50%;
+	animation-name:fade;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-iteration-count:infinite ;
+  }
+  #ball1 {
+    left: 20%;
+	transform:scale(1.5);
+	 animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);
+	 
+  }
+  #ball2 {
+    left: 75%;
+    transform:scale(1.5);
+	animation-timing-function:ease-out;
+  }
+  @keyframes fade{
+   0% {
+      top: 0px;
+	  
+    }
+	50%{
+		opacity:0.1;
+    	top: 449px;
+      width: 130px;
+      height: 70px;
+	 margin: 50px auto;
+	}
+	 100% {
+	 left:50%;
+      top: 0px;
+    }
+  }
+</style>
+<body>
+<!-- transform scale is used is increase size of element)-->
+  <header>
+    <h1>Welcome!</h1>
+    <nav id="navbar">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <p>I shift up when the #navbar is fixed to the browser window.</p>
+<div>
+
+<p class="ball" id= "ball1"></p>
+<p class="ball" id= "ball2"></p>
+</div>																																																	
+</body>

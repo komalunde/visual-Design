@@ -1,0 +1,46 @@
+<!--the z-index property can specify the order of how elements are stacked on top of one another-->
+<style>
+  div {
+    width: 60%;
+    height: 200px;
+    margin-top: 20px;
+  }
+  
+  .first {
+    background-color: red;
+    position: absolute;
+    z-index:2;
+	transform:skewY(-20deg);
+  }
+  .second {
+    background-color: blue;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    z-index: 1;
+	transform:skewX(50deg);
+  }
+</style>
+<!--the transform property is skewX(), which skews the selected element along its X (horizontal) axis by a given degree.
+ the transform property. Use the rotate() function with -45 degrees. (rotate() works the same way that skewX() and skewY() do).-->
+<div class="first"></div>
+<div class="second"></div>
+<style>
+.center
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  transform:rotate(-45deg);
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 25px 20px 10px 20px blue; 
+}
+
+</style>
+<div class="center"></div>
